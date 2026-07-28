@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>registration Form</title>
+</head>
+<body>
+ <form>
+    <fieldset>
+        <legend>registration Form</legend>
+        <label>name</label>
+        <input type="text" minlength="3" maxlength="5" pattern="[A-Za-z]" required>
+        <br><br>
+        <label>emial</label>
+        <input type="email" required>
+        <br><br>
+        <label>password</label>
+        <input type="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])?=.*[!@#$%^&*]>.*">
+        <br><br>
+        <label>mobile</label>
+        <input type="tel" minlength="11" maxlength="11" pattern="01[0125]" >
+        <br><br>
+        <label>country</label>
+        <input type="text" list="countries" >
+        <datalist id="countries">
+            <option value="egypt">
+             <option value="turkey">
+            <option value="saudi">
+            <option value="alx">
+            </datalist>
+            <br><br>
+            <label> range</label> 
+            <input type="range" min="300" max="500">
+            <br><br>
+            <label>address</label>
+            <input type="text" required pattern=" [A-Za-z]">
+            <br><br>
+            <label>image</label>
+            <input type="file" accept=" .png">
+            <br><br>
+            <input type="submit" value="submit"
+
+    </fieldset>
+ </form>   
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
