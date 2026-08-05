@@ -1,60 +1,36 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <meta charset="UTF-8">
-    <title>registration Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <form>
-    <fieldset>
-        <legend>registration Form</legend>
-        <label>name</label>
-        <input type="text" minlength="3" maxlength="5" pattern="[A-Za-z]" required>
-        <br><br>
-        <label>emial</label>
-        <input type="email" required>
-        <br><br>
-        <label>password</label>
-        <input type="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])?=.*[!@#$%^&*]>.*">
-        <br><br>
-        <label>mobile</label>
-        <input type="tel" minlength="11" maxlength="11" pattern="01[0125]" >
-        <br><br>
-        <label>country</label>
-        <input type="text" list="countries" >
-        <datalist id="countries">
-            <option value="egypt">
-             <option value="turkey">
-            <option value="saudi">
-            <option value="alx">
-            </datalist>
-            <br><br>
-            <label> range</label> 
-            <input type="range" min="300" max="500">
-            <br><br>
-            <label>address</label>
-            <input type="text" required pattern=" [A-Za-z]">
-            <br><br>
-            <label>image</label>
-            <input type="file" accept=" .png">
-            <br><br>
-            <input type="submit" value="submit"
 
-    </fieldset>
- </form>   
+  <div class="card-container">
+    <!-- الجزء الأيسر -->
+    <div class="left-panel">
+      <h2>Let's Chat</h2>
+      <p>Whether you have a question, want to start a project or simply want to connect.</p>
+      <p>Feel free to send me a message in the contact form.</p>
+    </div>
+
+    <!-- الجزء الأيمن (النموذج) -->
+    <div class="right-panel">
+      <h2>Contact</h2>
+      <span class="required-text">* Required</span>
+
+      <form action="#" method="POST">
+        <input type="text" placeholder="Name *" required>
+        <input type="email" placeholder="Email *" required>
+        <input type="text" placeholder="Company">
+        <input type="tel" placeholder="Phone">
+        <textarea placeholder="Message" rows="4"></textarea>
+        
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
-
-

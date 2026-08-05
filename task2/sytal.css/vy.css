@@ -1,0 +1,123 @@
+/* إعادة ضبط التنسيقات العامة */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #6c47ff; /* الخلفية البنفسجية الخارجية */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* الكارت الرئيسي */
+.card-container {
+  display: flex;
+  width: 100%;
+  max-width: 850px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* الجزء الأيسر (التركواز) */
+.left-panel {
+  background-color: #00bcd4; /* اللون الأزرق السماوي/التركواز */
+  color: #ffffff;
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.left-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.left-panel p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* الجزء الأيمن (الأبيض والرمادي) */
+.right-panel {
+  flex: 1.2;
+  padding: 40px;
+  background-color: #f7f7f8;
+}
+
+.right-panel h2 {
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.required-text {
+  display: block;
+  font-size: 0.75rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* حقول الإدخال */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  background-color: #e3e3e8; /* رمادي فاتح مثل التصميم */
+  border: none;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  outline: none;
+  color: #333;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #888;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+/* زر الإرسال */
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 20px; /* تصميم الزر الدائري من الأطراف */
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0097a7;
+}
+
+/* التجاوب مع الشاشات الصغيرة (الهواتف) */
+@media (max-width: 650px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
