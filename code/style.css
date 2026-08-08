@@ -1,0 +1,763 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: #333;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    height: 650px;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("ph.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    position: relative;
+}
+
+
+.navbar {
+    height: 70px;
+
+    background-color: #222;
+
+    padding: 0 60px;
+}
+
+
+.navbar h1 {
+    display: inline-block;
+
+    font-size: 35px;
+
+    margin: 15px 0;
+}
+
+
+.navbar span {
+    color: orange;
+}
+
+
+.links {
+    display: inline-block;
+
+    float: right;
+
+    margin-top: 25px;
+}
+
+
+.links a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+}
+
+
+.content {
+    width: 50%;
+
+    margin-left: 70px;
+
+    padding-top: 100px;
+}
+
+
+.content h1 {
+    font-size: 60px;
+}
+
+
+.content h1 span {
+    color: orange;
+}
+
+
+.content h2 {
+    font-size: 30px;
+
+    font-weight: normal;
+}
+
+
+.content p {
+    color: #ddd;
+
+    line-height: 1.8;
+}
+
+
+button {
+    background-color: orange;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 30px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+
+/* ================= FORM ================= */
+
+.form {
+    background-color: white;
+
+    color: black;
+
+    width: 330px;
+
+    padding: 25px;
+
+    position: absolute;
+
+    right: 70px;
+
+    top: 200px;
+}
+
+
+.form h2 span {
+    color: orange;
+}
+
+
+.form input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-bottom: 1px solid #ddd;
+
+    padding: 15px 0;
+
+    margin-bottom: 15px;
+}
+
+
+.form input[type="submit"] {
+    background-color: orange;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+/* ================= TABS ================= */
+
+.tabs-section {
+    padding: 100px 80px;
+
+    background-color: #f5f5f5;
+
+    position: relative;
+}
+
+
+/* Hide radio buttons */
+
+.tabs-section input {
+    display: none;
+}
+
+
+/* Tabs */
+
+.tabs {
+    display: inline-block;
+
+    width: 100px;
+
+    vertical-align: top;
+}
+
+
+.tabs label {
+    display: block;
+
+    width: 100px;
+
+    height: 80px;
+
+    background-color: #333;
+
+    color: white;
+
+    text-align: center;
+
+    line-height: 80px;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid #777;
+}
+
+
+/* First tab active */
+
+#tab1:checked ~ .tabs label[for="tab1"] {
+    background-color: orange;
+}
+
+
+/* Second tab active */
+
+#tab2:checked ~ .tabs label[for="tab2"] {
+    background-color: orange;
+}
+
+
+/* Third tab active */
+
+#tab3:checked ~ .tabs label[for="tab3"] {
+    background-color: orange;
+}
+
+
+/* Tabs Content */
+
+.tabs-content {
+    display: inline-block;
+
+    width: 80%;
+
+    vertical-align: top;
+
+    margin-left: 50px;
+}
+
+
+/* Hide all content */
+
+.tab-content {
+    display: none;
+}
+
+
+/* Show Tab 1 */
+
+#tab1:checked ~ .tabs-content .tab-content1 {
+    display: block;
+}
+
+
+/* Show Tab 2 */
+
+#tab2:checked ~ .tabs-content .tab-content2 {
+    display: block;
+}
+
+
+/* Show Tab 3 */
+
+#tab3:checked ~ .tabs-content .tab-content3 {
+    display: block;
+}
+
+
+/* Text */
+
+.tab-content .text {
+    display: inline-block;
+
+    width: 55%;
+
+    vertical-align: top;
+}
+
+
+.tab-content h2 {
+    font-size: 25px;
+}
+
+
+.tab-content p {
+    color: #999;
+
+    line-height: 1.8;
+}
+
+
+/* Image */
+
+.building {
+    display: inline-block;
+
+    width: 40%;
+
+    vertical-align: top;
+
+    text-align: center;
+}
+
+
+.building img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    -webkit-box-reflect:
+    below 5px
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,0.3)
+    );
+}
+
+
+
+/* ================= FEATURES ================= */
+
+.features-section {
+    padding: 100px 70px;
+
+    text-align: center;
+}
+
+
+.features-section h1 {
+    font-size: 35px;
+
+    font-weight: normal;
+}
+
+
+.line {
+    width: 50px;
+
+    height: 3px;
+
+    background-color: orange;
+
+    margin: 20px auto;
+}
+
+
+.description {
+    color: #999;
+}
+
+
+.features {
+    margin-top: 70px;
+
+    text-align: center;
+}
+
+
+.feature {
+    display: inline-block;
+
+    width: 30%;
+
+    vertical-align: top;
+
+    margin: 0 1%;
+}
+
+
+.feature p {
+    color: #999;
+
+    line-height: 1.7;
+}
+
+
+.icon {
+    width: 65px;
+
+    height: 65px;
+
+    border: 2px solid orange;
+
+    border-radius: 50%;
+
+    margin: auto;
+
+    display: inline-block;
+
+    line-height: 65px;
+
+    font-size: 25px;
+}
+
+
+
+/* ================= PRICING ================= */
+
+.pricing-section {
+    padding: 100px 50px;
+
+    background-color: #f5f5f5;
+
+    text-align: center;
+}
+
+
+.pricing-section h1 {
+    font-size: 35px;
+
+    font-weight: normal;
+}
+
+
+.pricing {
+    margin-top: 60px;
+
+    text-align: center;
+}
+
+
+.price-box {
+    display: inline-block;
+
+    width: 30%;
+
+    background-color: #333;
+
+    color: white;
+
+    vertical-align: top;
+
+    margin: 0 1%;
+}
+
+
+.price-box h2 {
+    padding: 20px;
+
+    margin: 0;
+
+    border-bottom: 1px solid #777;
+}
+
+
+.price {
+    font-size: 60px;
+
+    font-weight: bold;
+
+    padding: 25px;
+}
+
+
+.price span {
+    font-size: 25px;
+}
+
+
+.price-box p {
+    margin: 0;
+
+    padding: 12px;
+}
+
+
+.free {
+    color: #aaa;
+}
+
+
+.popular {
+    background-color: orange;
+
+    color: white;
+}
+
+
+.info {
+    background-color: white;
+
+    color: #999;
+
+    padding: 15px;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+
+/* ================= REVIEWS ================= */
+
+.reviews-section {
+    padding: 100px 60px;
+
+    text-align: center;
+}
+
+
+.reviews-section h1 {
+    font-size: 35px;
+
+    font-weight: normal;
+}
+
+
+.reviews {
+    margin-top: 60px;
+
+    text-align: center;
+}
+
+
+.review {
+    display: inline-block;
+
+    width: 30%;
+
+    vertical-align: top;
+
+    margin: 0 1%;
+}
+
+
+.message {
+    background-color: #f5f5f5;
+
+    color: #999;
+
+    padding: 25px;
+
+    text-align: left;
+
+    line-height: 1.7;
+}
+
+
+.person {
+    text-align: left;
+
+    margin-top: 15px;
+}
+
+
+.person img {
+    display: inline-block;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    margin-right: 15px;
+
+    vertical-align: middle;
+}
+
+
+.person div {
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+
+.person h3 {
+    margin: 0;
+}
+
+
+.person p {
+    margin: 5px 0;
+
+    color: #999;
+}
+
+
+
+/* ================= DESIGN ================= */
+
+.design {
+    height: 500px;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("city2.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    text-align: center;
+
+    padding-top: 100px;
+
+    box-sizing: border-box;
+}
+
+
+.design-content {
+    width: 60%;
+
+    margin: auto;
+}
+
+
+.design h1 {
+    font-size: 40px;
+
+    font-weight: normal;
+}
+
+
+.design p {
+    color: #ddd;
+
+    line-height: 1.8;
+}
+
+
+.design button {
+    background-color: transparent;
+
+    color: white;
+
+    border: 2px solid white;
+
+    padding: 13px 30px;
+
+    margin-top: 20px;
+}
+
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    padding: 100px 70px;
+
+    text-align: center;
+}
+
+
+.contact-section h1 {
+    font-size: 38px;
+
+    font-weight: normal;
+}
+
+
+.contact-form {
+    margin-top: 60px;
+
+    text-align: center;
+}
+
+
+.left-form {
+    display: inline-block;
+
+    width: 48%;
+
+    vertical-align: top;
+
+    text-align: left;
+}
+
+
+.right-form {
+    display: inline-block;
+
+    width: 48%;
+
+    vertical-align: top;
+
+    text-align: left;
+}
+
+
+.contact-form input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-bottom: 1px solid #ddd;
+
+    padding: 15px 5px;
+
+    margin-bottom: 20px;
+}
+
+
+.contact-form textarea {
+    width: 100%;
+
+    height: 160px;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    border-bottom: 1px solid #ddd;
+
+    padding: 15px 5px;
+}
+
+
+.send {
+    background-color: orange;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 25px;
+
+    margin-top: 35px;
+}
+
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+.footer span {
+    margin: 0 12px;
+
+    font-size: 20px;
+}
