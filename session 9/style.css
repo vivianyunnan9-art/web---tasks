@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+
+.car-section {
+    width: 100%;
+    height: 440px;
+    background-color: black;
+
+    
+}
+
+
+.car {
+    width: 250px;
+    position: absolute;
+    top: 180px;
+    left: 0;
+background-color: black;
+    animation-name: moveCar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+.car img {
+    width: 100%;
+    display: block;
+}
+
+
+@keyframes moveCar {
+
+    0% {
+        transform: translateX(-300px);
+    }
+
+    100% {
+        transform: translateX(2000px);
+    }
+
+}
