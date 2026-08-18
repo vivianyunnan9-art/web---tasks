@@ -1,0 +1,425 @@
+/* ===================================
+   Tablet / iPad
+=================================== */
+
+@media (max-width: 991px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /* Navbar */
+
+    nav ul {
+        width: 40%;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .nav-buttons a {
+        margin-right: 10px;
+    }
+
+    .nav-buttons button {
+        padding: 9px 18px;
+    }
+
+
+    /* Home */
+
+    .home-1 h1 {
+        font-size: 34px;
+    }
+
+    .img img {
+        height: 300px;
+    }
+
+
+    /* Wellbeing */
+
+    .welldoing .container {
+        padding: 6%;
+    }
+
+    .welldoing-text {
+        width: 58%;
+    }
+
+    .welldoing-img {
+        width: 35%;
+    }
+
+
+    /* Organic */
+
+    .organic-content {
+        gap: 30px;
+    }
+
+    .organic-img {
+        width: 48%;
+    }
+
+    .organic-text {
+        width: 48%;
+    }
+
+    .organic-img img {
+        height: 400px;
+    }
+
+    .organic-text h3 {
+        font-size: 28px;
+    }
+
+
+    /* Eat */
+
+    .eat-img {
+        width: 38%;
+    }
+
+    .eat-text {
+        width: 57%;
+    }
+
+    .eat-img img {
+        height: 300px;
+    }
+
+
+    /* Last */
+
+    .last-img {
+        min-height: 350px;
+        padding: 10% 12%;
+    }
+
+    .last-img h2 {
+        font-size: 28px;
+    }
+
+    .plan-box {
+        width: 92%;
+    }
+}
+
+
+/* ===================================
+   Mobile
+=================================== */
+
+@media (max-width: 575px) {
+
+    .container {
+        width: 90%;
+    }
+
+
+    /* Navbar */
+
+    nav {
+        padding: 15px 0;
+    }
+
+    nav .container {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .nav-buttons {
+        margin-left: auto;
+    }
+
+    .nav-buttons a {
+        display: none;
+    }
+
+    .nav-buttons button {
+        padding: 9px 18px;
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+
+    /* Home */
+
+    .home-section {
+        padding: 25px 0 50px;
+    }
+
+    .home-1 h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .home-1 > p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .home-1 button {
+        padding: 10px 25px;
+    }
+
+    .img {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .img img {
+        width: 100%;
+        height: 230px;
+    }
+
+
+    /* Wellbeing */
+
+    .padding-top-bottom {
+        padding: 12% 0;
+    }
+
+    .welldoing .container {
+        padding: 8%;
+    }
+
+    .welldoing h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .welldoing-content {
+        flex-direction: column;
+    }
+
+    .welldoing-text {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .welldoing-text div {
+        width: 50%;
+    }
+
+    .welldoing-text p {
+        font-size: 13px;
+    }
+
+    .welldoing-img {
+        width: 75%;
+    }
+
+
+    /* Organic */
+
+    .organic-section {
+        padding: 12% 0;
+    }
+
+    .organic-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .organic-img {
+        width: 100%;
+    }
+
+    .organic-img img {
+        height: 300px;
+    }
+
+    .organic-text {
+        width: 100%;
+    }
+
+    .organic-text h3 {
+        font-size: 26px;
+    }
+
+    .organic-text > p {
+        font-size: 14px;
+    }
+
+    .organic-item {
+        margin-bottom: 20px;
+    }
+
+
+    /* Eat */
+
+    .eat-section {
+        padding: 10% 0;
+    }
+
+    .eat-section .container {
+        padding: 8%;
+    }
+
+    .eat-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .eat-img {
+        width: 100%;
+    }
+
+    .eat-img img {
+        height: 280px;
+    }
+
+    .eat-text {
+        width: 100%;
+    }
+
+    .eat-text h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .eat-text div {
+        width: 48%;
+    }
+
+    .eat-text p {
+        font-size: 13px;
+    }
+
+
+    /* Last Section */
+
+    .last-section {
+        padding: 12% 0 15%;
+    }
+
+    .last-img {
+        min-height: 400px;
+        padding: 15% 8%;
+        border-radius: 12px;
+    }
+
+    .last-img > i {
+        margin-bottom: 20px;
+    }
+
+    .last-img h2 {
+        font-size: 24px;
+        line-height: 1.3;
+    }
+
+    .last-img p {
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .last-img button {
+        padding: 10px 35px;
+    }
+
+
+    /* Plan */
+
+    .plan-box {
+        width: 90%;
+        margin-top: -30px;
+        padding: 8% 5%;
+        gap: 25px 0;
+    }
+
+    .plan-item {
+        width: 50%;
+    }
+
+    .plan-item p {
+        font-size: 12px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 10% 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-left {
+        align-items: center;
+    }
+
+    footer ul {
+        width: 100%;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer ul li {
+        margin: 5px 10px;
+    }
+}
+
+
+/* ===================================
+   Very Small Mobile
+=================================== */
+
+@media (max-width: 400px) {
+
+    .home-1 h1 {
+        font-size: 25px;
+    }
+
+    .img img {
+        height: 200px;
+    }
+
+    .welldoing-text {
+        flex-direction: column;
+    }
+
+    .welldoing-text div {
+        width: 100%;
+    }
+
+    .welldoing-img {
+        width: 90%;
+    }
+
+    .eat-text {
+        flex-direction: column;
+    }
+
+    .eat-text div {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .last-img {
+        min-height: 430px;
+    }
+
+    .last-img h2 {
+        font-size: 22px;
+    }
+
+    .plan-item {
+        width: 50%;
+    }
+}

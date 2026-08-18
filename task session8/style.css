@@ -5,6 +5,15 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #1f3b44;
+    background-color: #fff;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -13,6 +22,14 @@ a {
 ul {
     list-style: none;
 }
+
+button {
+    font-family: inherit;
+}
+
+/* =========================
+   General Classes
+========================= */
 
 .container {
     width: 80%;
@@ -27,11 +44,12 @@ ul {
     justify-content: space-between;
 }
 
+.align-items-center {
+    align-items: center;
+}
+
 .position-relative {
     position: relative;
-}
-.padding-top-bottom {
-    padding: 6% 0;
 }
 
 .flex-wrap {
@@ -42,31 +60,50 @@ ul {
     text-align: center;
 }
 
-/* Navbar */
+.padding-top-bottom {
+    padding: 6% 0;
+}
+
+
+/* =========================
+   Navbar
+========================= */
 
 nav {
-    padding: 2% 0;
+    padding: 20px 0;
+    background-color: #fff;
 }
 
 .logo-box {
+    display: flex;
     align-items: center;
 }
 
 .logo-box i {
-    color: lightgray;
+    color: #285e67;
     font-size: 18px;
     margin-right: 8px;
 }
 
-
-nav ul {
-    width: 45%;
-    align-items: center;
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1f3b44;
 }
 
-nav ul a {
+nav ul {
+    width: 35%;
+}
+
+nav ul li a {
     color: #1f3b44;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #285e67;
 }
 
 .nav-buttons {
@@ -77,62 +114,106 @@ nav ul a {
 .nav-buttons a {
     margin-right: 20px;
     color: #1f3b44;
+    font-weight: 500;
 }
 
-.nav-buttons button {
-    background-color: #ffcc00;
-    border: 0;
-    padding: 12px 20px;
-    border-radius: 3px;
+.nav-buttons button,
+.home-1 button {
+    background-color: #285e67;
+    color: white;
+    border: none;
+    padding: 11px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-/* Home Section */
-.home-1 h1,p{
+
+.nav-buttons button:hover,
+.home-1 button:hover {
+    background-color: #1f4b53;
+}
+
+
+/* =========================
+   Home Section
+========================= */
+
+.home-section {
+    padding: 20px 0 70px;
+}
+
+.home-1 {
+    padding-top: 2%;
+}
+
+.home-1 h1 {
     text-align: center;
+    font-size: 38px;
+    line-height: 1.2;
+    color: #1f3b44;
+    max-width: 700px;
+    margin: 0 auto 15px;
 }
+
+.home-1 > p {
+    text-align: center;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
 .home-1 button {
     display: block;
     margin: 20px auto;
-    width: 18%;
-    padding: 1% 0;
-    border: 0;
-    border-radius: 25px;
-    background-color: #285E67;
-    color: white;
 }
+
 .img {
-    width: 90%;
-    margin: 4% auto;
+    width: 100%;
+    margin: 45px auto 0;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .img img {
     width: 49%;
-    margin: 0;
+    height: 350px;
+    object-fit: cover;
     border-radius: 15px;
+    display: block;
 }
 
-/* Wellbeing Section */
+
+/* =========================
+   Wellbeing Section
+========================= */
+
+.welldoing {
+    padding-top: 30px;
+}
 
 .welldoing .container {
     background-color: #f4f4f4;
-    padding: 4%;
-    border-radius: 10px;
+    padding: 5%;
+    border-radius: 15px;
 }
 
 .welldoing h2 {
-    margin-bottom: 4%;
-    color: #292929;
+    margin-bottom: 5%;
+    color: #1f3b44;
+    font-size: 28px;
 }
 
 .welldoing-content {
-    align-items: center;
+    gap: 30px;
 }
 
 .welldoing-text {
     width: 60%;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .welldoing-text div {
@@ -140,17 +221,23 @@ nav ul a {
 }
 
 .welldoing-text i {
-    background-color: #285E67;
+    background-color: #285e67;
     color: white;
-    padding: 14%;
-    border-radius: 21%;
-    margin-bottom: 8%;
-    width: 35%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
 }
 
 .welldoing-text p {
     text-align: left;
     font-size: 14px;
+    color: #555;
+    line-height: 1.6;
 }
 
 .welldoing-img {
@@ -162,14 +249,17 @@ nav ul a {
     display: block;
 }
 
-/* Organic Section */
+
+/* =========================
+   Organic Section
+========================= */
 
 .organic-section {
-    padding: 5% 0;
+    padding: 7% 0;
 }
 
 .organic-content {
-    align-items: center;
+    gap: 50px;
 }
 
 .organic-img {
@@ -178,7 +268,7 @@ nav ul a {
 
 .organic-img img {
     width: 100%;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
     border-radius: 15px;
     display: block;
@@ -189,61 +279,77 @@ nav ul a {
 }
 
 .organic-text h3 {
-    font-size: 35px;
+    font-size: 32px;
     margin-bottom: 4%;
-}
-
-.organic-text > p {
-    line-height: 1.6;
-    margin-bottom: 7%;
-   
-}
-
-.organic-item {
-    align-items: center;
-    margin-bottom: 6%;
-    
-}
-
-.organic-item i {
-    color: #285E67;
-    font-size: 25px;
-    margin-right: 20%;
-    border: 1px solid #285E67;
-    border-radius: 50%;
-    padding: 10px;
-}
-.icon-i{
-    border-radius: 50%;
-    padding: 5%;
     color: #1f3b44;
 }
 
+.organic-text > p {
+    line-height: 1.7;
+    margin-bottom: 6%;
+    color: #555;
+    font-size: 14px;
+}
+
+.organic-item {
+    margin-bottom: 4%;
+}
+
+.icon-i {
+    flex-shrink: 0;
+}
+
+.icon-i i {
+    color: #285e67;
+    font-size: 18px;
+    border: 1px solid #285e67;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
 
 .organic-item p {
     text-align: left;
-    margin: 2%;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
 }
-/*eat-section*/
+
+
+/* =========================
+   Eat Section
+========================= */
+
+.eat-section {
+    padding: 5% 0;
+}
 
 .eat-section .container {
     background-color: #f4f4f4;
-    padding: 4%;
-    border-radius: 10px;
+    padding: 5%;
+    border-radius: 15px;
 }
 
 .eat-content {
-    align-items: center;
+    gap: 40px;
 }
+
 .eat-text {
     width: 55%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .eat-text h2 {
     width: 100%;
     margin-bottom: 5%;
+    font-size: 28px;
+    color: #1f3b44;
 }
 
 .eat-text div {
@@ -251,18 +357,23 @@ nav ul a {
 }
 
 .eat-text i {
-    background-color: #EBBFAE;
-    color: white;
-    padding: 5%;
-    border-radius: 13%;
-    margin-bottom: 7%;
-    width: 15%;
-    
+    background-color: #ebbfae;
+    color: #285e67;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
 }
 
 .eat-text p {
     text-align: left;
     font-size: 14px;
+    color: #555;
+    line-height: 1.6;
 }
 
 .eat-img {
@@ -271,37 +382,63 @@ nav ul a {
 
 .eat-img img {
     width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
     display: block;
 }
-/* Last Section */
+
+
+/* =========================
+   Last Section
+========================= */
 
 .last-section {
-    padding-bottom: 10%;
+    padding: 7% 0 8%;
 }
 
 .last-img {
-    background-image: url"photo/pi5.png";
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("photo/pi5\).png");
+
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 400px;
+
     padding: 8% 15%;
-    border-radius: 10px;
+    border-radius: 15px;
+
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .last-img > i {
     border: 1px solid white;
     border-radius: 10px;
-    padding: 15px;
-    font-size: 25px;
+    padding: 12px;
+    font-size: 22px;
     margin-bottom: 3%;
 }
 
 .last-img h2 {
     margin-bottom: 2%;
+    font-size: 30px;
 }
 
 .last-img p {
-    margin-bottom: 3%;
+    max-width: 650px;
+    margin-bottom: 4%;
+    line-height: 1.6;
 }
 
 .last-img button {
@@ -309,49 +446,89 @@ nav ul a {
     color: white;
     border: 1px solid white;
     border-radius: 25px;
-    padding: 12px 50px;
+    padding: 12px 45px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.last-img button:hover {
+    background-color: white;
+    color: #285e67;
+}
+
+
+/* =========================
+   Plan Box
+========================= */
 
 .plan-box {
     width: 90%;
-    margin: -5% auto 0;
-    background-color: #FCE2D7;
-    padding: 6%;
-    border-radius: 10px;
+    margin: -4% auto 0;
+    background-color: #fce2d7;
+    padding: 4% 2%;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
 }
 
 .plan-item {
-    width: 20%;
+    width: 22%;
 }
 
 .plan-item i {
-    border: 1px solid black;
+    border: 1px solid #1f3b44;
     border-radius: 50%;
-    padding: 12px;
-    margin-bottom: 10%;
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    color: #1f3b44;
 }
-/* Footer */
+
+.plan-item p {
+    font-weight: 600;
+    color: #1f3b44;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Footer
+========================= */
 
 footer {
-    background-color: #285E67;
+    background-color: #285e67;
     color: white;
-    padding: 5% 0;
+    padding: 4% 0;
 }
 
-footer .container {
-    align-items: center;
+.footer-left {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-logo {
     font-weight: bold;
+    font-size: 20px;
+    color: white;
 }
 
 .social-icons {
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .social-icons i {
     margin-right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    transform: translateY(-3px);
 }
 
 footer ul {
@@ -359,5 +536,10 @@ footer ul {
 }
 
 footer ul a {
-    font-size: 12px;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+footer ul a:hover {
+    color: white;
 }
