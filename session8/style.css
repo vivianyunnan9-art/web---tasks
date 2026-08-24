@@ -40,13 +40,6 @@
 }
 
 
-.card:hover img{
-    transform: translate(-15px,-15px);
-}
-.card:hover .content{
-    transform: translate(25px ,25px);
-}
-
 .content{
 
    margin-top: 29%;
@@ -61,4 +54,11 @@
     height: 200px;
     
 
+}
+
+.card:hover .img-abs{
+    transform: translate(-15px,-15px);
+}
+.card:hover .content{
+    transform: translate(25px ,25px);
 }
