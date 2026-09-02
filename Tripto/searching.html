@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tripto | Searching</title>
+
+<!-- ملف بوتستراب من الإنترنت -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- خط الصفحة -->
+<link href="style.css">
+
+<style>
+
+  /* خلينا الصفحة كلها بنفس الخط ده */
+  body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* نشيل المسافة الافتراضية حوالين الصفحة */
+  }
+
+  /* الخلفية بتاعة الصفحة كلها: تدرج لوني من الأزرق للأصفر */
+  .page-background{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(160deg, #dbe8ff 0%, #e3e2fb 40%, #fdf6e6 100%);
+    position: relative;      /* عشان نقدر نحط الخريطة فوقها */
+    overflow: hidden;        /* عشان الخريطة متطلعش بره الصفحة */
+    display: flex;           /* لعرض العناصر جنب بعض */
+    flex-direction: column;  /* بس نخليهم فوق بعض عمودي */
+    justify-content: center; /* توسيط رأسي */
+    align-items: center;     /* توسيط أفقي */
+    text-align: center;
+  }
+
+  /* صورة خريطة العالم في الخلفية */
+  .map-background{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-width: 1400px; /* عشان الخريطة تفضل واضحة في الشاشات الكبيرة */
+    z-index: 1;
+  }
+
+  /* اللوجو (صورة SVG جاهزة) */
+  .logo-img{
+    width: 220px;
+    max-width: 60vw;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 25px;
+  }
+
+  /* الجملة اللي تحت اللوجو */
+  .page-text{
+    color: #1e3fa0;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* دائرة التحميل (Spinner) */
+  .loading-circle{
+    width: 32px;
+    height: 32px;
+    border: 4px solid #d6e0ff;   /* لون الدائرة الفاتح */
+    border-top: 4px solid #2f6bff; /* اللون اللي بيلف */
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* حركة دوران الدائرة */
+  @keyframes spin{
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+  }
+
+  /* تصغير الخط شوية في الموبايل */
+  @media (max-width: 576px){
+    .page-text{ font-size: 16px; }
+  }
+
+</style>
+</head>
+<body>
+
+  <!-- الصفحة كلها عبارة عن div واحد بيستخدم كلاسات بوتستراب للتوسيط -->
+  <div class="page-background d-flex flex-column justify-content-center align-items-center text-center px-3">
+
+            <!-- (لimages) -->
+    <img src="impro/map.png.png" class="map-background" alt="World Map">
+
+             <!--images) -->
+    <img src="impro/logo.png.svg" class="logo-img" alt="Tripto Logo">
+
+    <!-- الجملة تحت اللوجو -->
+    <p class="page-text">Find your perfect stay in every city.</p>
+
+    <!-- دائرة التحميل -->
+    <div class="loading-circle"></div>
+
+  </div>
+
+</body>
+</html>

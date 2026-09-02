@@ -1,0 +1,119 @@
+/* ===== General & Header ===== */
+body {
+  background-color: #f7f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-dot {
+  color: #bcc816; /* لون مميز للـ o في tripto */
+}
+
+.searchbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease;
+}
+.searchbar:focus-within {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.avatar-img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border: 2px solid #e9ecef;
+}
+
+/* ===== Language Modal ===== */
+.lang-item {
+  padding: 10px 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+.lang-item:hover {
+  background-color: #f8f9fa;
+  border-color: #0d6efd;
+}
+.lang-item.active {
+  background-color: #e7f1ff;
+  border-color: #0d6efd;
+  color: #0d6efd;
+  font-weight: 600;
+}
+.lang-item .check {
+  float: right;
+  margin-top: 3px;
+}
+
+/* ===== Hotel Cards ===== */
+.hotel-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.badge-corner {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.heart-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.1rem;
+  color: #495057;
+}
+.heart-btn:hover {
+  background: #fff;
+  color: #ff5a5f;
+  transform: scale(1.1);
+}
+.heart-btn.liked {
+  color: #ff5a5f;
+}
+.heart-btn.liked i {
+  font-weight: 900; /* fa-solid */
+}
+
+.score-badge {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px 6px 6px 0;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+/* ===== Filters ===== */
+.form-range::-webkit-slider-thumb {
+  background: #0d6efd;
+}
